@@ -8,9 +8,23 @@ public class Problem_1 : MonoBehaviour
     //You should have 48 and 17.55 as your return print outs. 
     void Start()
     {
-        
+        Perimeter(12, 4);
+        print(Perimeter(12, 4));
+        Perimeter(13.5f, 1.3f);
+        print(Perimeter(13.5f, 1.3f));
     }
-
+    
+    
+    
+    int Perimeter(int length, int width)
+    {
+        return 2 * length + 2 * width;
+    }
+    float Perimeter(float length, float width)
+    {
+        return 2 * length + 2 * width;
+    }
+    
     //Part 1: 
     //Create a function called Perimeter that takes in two parameters of int length and int width
     //Calculate the perimeter of the box and return the value as an int.
